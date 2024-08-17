@@ -1,0 +1,77 @@
+p {
+    color: red; /* Selektor Elemen */
+    font-size: 18px;
+    background-image: url('wllppr.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: yellow; /* Selektor Kelas */
+}
+
+/* Styling untuk elemen dengan ID "highlight" */
+#highlight {
+    color: orange; /* Selektor ID */
+    font-size: 20px;
+}
+
+/* Styling untuk elemen <a> saat di-hover */
+a:hover {
+    color: blue; /* Selektor Atribut */
+}
+
+/* Styling untuk box model */
+#boxModel {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 15px;
+}
+
+/* Styling Flexbox untuk tata letak */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+/* Styling lanjutan */
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.advanced-style {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, blue, purple);
+    padding: 20px;
+    color: white;
+}
+
+/* Media Query untuk responsif desain */
+@media screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    body {
+        background-color: #e0f7fa;
+    }
+}
+
+body {
+    background-color: #f0f0f0;
+}
