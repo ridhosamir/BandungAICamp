@@ -1,77 +1,124 @@
-p {
-    color: red; /* Selektor Elemen */
-    font-size: 18px;
-    background-image: url('wllppr.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.container {
-    background-color: yellow; /* Selektor Kelas */
-}
-
-/* Styling untuk elemen dengan ID "highlight" */
-#highlight {
-    color: orange; /* Selektor ID */
-    font-size: 20px;
-}
-
-/* Styling untuk elemen <a> saat di-hover */
-a:hover {
-    color: blue; /* Selektor Atribut */
-}
-
-/* Styling untuk box model */
-#boxModel {
-    width: 300px;
-    height: 150px;
-    padding: 20px;
-    border: 5px solid black;
-    margin: 15px;
-}
-
-/* Styling Flexbox untuk tata letak */
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.item {
-    padding: 10px;
-    border: 2px solid gray;
-}
-
-/* Styling lanjutan */
-h2 {
-    font-family: Arial, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.advanced-style {
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(to right, blue, purple);
-    padding: 20px;
-    color: white;
-}
-
-/* Media Query untuk responsif desain */
-@media screen and (max-width: 600px) {
-    .flex-container {
-        flex-direction: column;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    body {
-        background-color: #e0f7fa;
-    }
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form button {
+        width: 100%;
+    }
 }
