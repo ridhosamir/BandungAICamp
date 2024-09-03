@@ -1,124 +1,188 @@
-/* Basic reset */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and Font Styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+/* Navigation (Header) */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-    justify-content: center;
-    background-color: #444;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 30px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    display: block;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #f1f1f1;
+    border-radius: 5px;
 }
 
-section {
-    flex: 1;
-    padding: 20px;
+.auth-buttons {
+    display: flex;
+    gap: 10px;
 }
 
-footer {
+.auth-buttons .btn {
+    padding: 8px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #f1f1f1;
+}
+
+.auth-buttons .btn.register {
     background-color: #333;
     color: #fff;
+}
+
+.auth-buttons .btn.register:hover {
+    background-color: #000;
+}
+
+/* Advertisement Section */
+.advertisement {
+    background-color: #f1f1f1;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 80px 20px;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-form div {
+.advertisement h1 {
+    font-size: 3em;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
-form label {
-    display: block;
+.advertisement hr {
+    width: 60px;
+    border: 2px solid #333;
+    margin: 20px auto;
+}
+
+/* Products Section */
+.products {
+    padding: 40px 30px;
+    background-color: #fff;
+}
+
+.products h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.products hr {
+    width: 40px;
+    border: 1px solid #333;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 30px 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    gap: 50px;
+}
+
+.footer-column p {
+    font-size: 0.9em;
+    color: #333;
+    line-height: 1.6;
     margin-bottom: 5px;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    section {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    form {
-        padding: 15px;
-    }
-
-    form button {
-        width: 100%;
-    }
+.footer-column p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
