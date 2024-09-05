@@ -113,6 +113,8 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .product-item {
@@ -121,6 +123,11 @@ nav ul li a:hover {
     background-color: #fafafa;
     border-radius: 8px;
     text-align: center;
+    text-decoration: none;
+    color: inherit;
+    width: 200px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
 }
 
 .product-item img {
@@ -130,13 +137,18 @@ nav ul li a:hover {
 }
 
 .product-item h3 {
-    font-size: 1.2em;
+    font-size: 18px;
     margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .product-item p {
-    font-size: 0.9em;
+    font-size: 14px;
     color: #555;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Section */
@@ -185,4 +197,376 @@ footer {
 .footer-column p:first-child {
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+/* Login Section */
+.login-section {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login-container h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.login-container hr {
+    width: 60px;
+    border: 2px solid #333;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #000;
+}
+
+/* Register Section */
+.register-section {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.register-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.register-container h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.register-container hr {
+    width: 60px;
+    border: 2px solid #333;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #000;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-section hr {
+    width: 60px;
+    margin: 0 auto 40px auto;
+    border: 2px solid #333;
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.about-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 14px;
+    color: #666;
+}
+
+.about-text .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-text .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Team Section */
+.team-section {
+    padding: 60px 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.team-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.team-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.contact-container h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-container hr {
+    width: 60px;
+    border: 2px solid #333;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #000;
+}
+
+/* Product Detail Section */
+.productd-detail {
+    display: flex;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.productd-image img {
+    width: 400px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.productd-info {
+    margin-left: 50px;
+}
+
+.productd-info h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.productd-info .price {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.productd-info .description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.productd-info .cta .add-to-cart {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.productd-info .cta .add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+/* Related Products Section */
+.related-products {
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.related-products h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.productd-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.productd-item {
+    width: 200px;
+    text-align: center;
+}
+
+.productd-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.productd-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.productd-item p {
+    font-size: 16px;
+    color: #007bff;
 }
